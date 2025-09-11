@@ -6,7 +6,8 @@
     border-radius: 20px;
     padding: 24px;
     max-width: 380px;
-    max-height: fit-content;
+    width: fit-content;
+    height: fit-content;
     aspect-ratio: 327 / 501;
     box-shadow: 10px 10px black;
     margin-bottom: 10px; /* to offset attributions*/

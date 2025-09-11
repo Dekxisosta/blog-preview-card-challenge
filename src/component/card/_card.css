@@ -5,19 +5,20 @@
     border: 1px black solid;
     border-radius: 20px;
     padding: 24px;
+    max-width: 380px;
+    max-height: fit-content;
     aspect-ratio: 327 / 501;
-    max-width: 400px;
-    box-shadow: 12px 12px black;
-    margin: 5%; /* to offset attributions*/
+    box-shadow: 10px 10px black;
+    margin-bottom: 10px; /* to offset attributions*/
 }
 @media (min-width: 768px) {
     .card{
         aspect-ratio: 384 / 522;
-        box-shadow: 12px 12px black;
+        max-height: 522px;
     }
 }
 
-.card__title, .card__tags, .card__date,
+.card__title, .card__tags,
 .card__body, .card__footer{
     margin-block: 12px 12px;
 }
@@ -25,6 +26,7 @@
 .card__image{
     display: flex;
     justify-content: center;
+    min-height: 45%;
     aspect-ratio: 336 / 200;
     border-radius: 10px;
     overflow: hidden;
@@ -39,14 +41,13 @@
 }
 .card__tags{
     margin-top: 24px;
-    margin-bottom: 12px;  
     padding: 0;
     display: flex;
     gap: 0.5rem;
 }
 .card__tag{
     background-color: var(--color-tag-bg);
-    padding: 2% 4%;
+    padding: 1.5% 4%;
     border-radius: 5px;
 }
 .card__tag a{
@@ -72,8 +73,8 @@
     font-weight: 500;
 }
 .card__footer{
-    margin-top: auto;
     display: flex;
+    margin-top: auto;
     justify-self: flex-end;
     align-content: center;
 }

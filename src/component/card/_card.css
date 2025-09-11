@@ -1,0 +1,99 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 20px;
+    padding: 24px;
+    aspect-ratio: 327 / 501;
+    max-width: 400px;
+    box-shadow: 12px 12px black;
+    margin: 5%; /* to offset attributions*/
+}
+@media (min-width: 768px) {
+    .card{
+        aspect-ratio: 384 / 522;
+        box-shadow: 12px 12px black;
+    }
+}
+
+.card__title, .card__tags, .card__date,
+.card__body, .card__footer{
+    margin-block: 12px 12px;
+}
+
+.card__image{
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 336 / 200;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card__image img{
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.card__image img:hover{
+    transform: scale(1.1);
+}
+.card__tags{
+    margin-top: 24px;
+    margin-bottom: 12px;  
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+.card__tag{
+    background-color: var(--color-tag-bg);
+    padding: 2% 4%;
+    border-radius: 5px;
+}
+.card__tag a{
+    color: var(--color-text-primary);
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: color 0.3s ease;
+}
+.card__tag a:hover{
+    color: var(--color-tag-text-highlight);
+}
+.card__title a{
+    font-size: 24px;
+    color: var(--color-text-primary);
+    transition: color 0.3s ease;
+}
+.card__title a:hover{
+    color: var(--color-text-highlight);
+}
+.card__body{
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+.card__footer{
+    margin-top: auto;
+    display: flex;
+    justify-self: flex-end;
+    align-content: center;
+}
+.card__author{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.card__author-image{
+    width: 25%;
+    transition: all 0.3s ease;
+}
+.card__author-name{
+    padding: 0% 5%;
+    color: var(--color-text-primary);
+    transition: all 0.3s ease;
+}
+.card__author-image:hover{
+    transform: scale(1.1);
+}
+.card__author-name:hover{
+    color: var(--color-text-highlight);
+}

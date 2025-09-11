@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- DEFAULT META TAGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern blog preview card component with semantic HTML and responsive design.">
+  <meta name="author" content="Dekxi">
+
+  <!-- OPEN GRAPH / SOCIAL SHARING -->
+  <meta property="og:title" content="Blog Preview Card">
+  <meta property="og:description" content="A modern, responsive blog card component example.">
+  <meta property="og:image" content="card-preview.jpg">
+  <meta property="og:type" content="website">
+
+  
+  <!-- PREVENTS FOUC -->
+  <link rel="stylesheet" href="/src/styles/style.css" />
+  <!-- VITE ENTRY -->
+  <script type="module" src="src/main.js"></script>
+
+  <!-- WEBSITE TITLE && FAVICON -->
+  <title>Frontend Mentor | Blog preview card</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+</head>
+<body>
+  <!-- PAGE STRUCTURE -->
+  <section class="page-wrapper txt-normal-line tracking-norm">
+    <main>
+      <!-- CARD STRUCTURE -->
+      <article class="card">
+        <a class="card__image" href="#">
+          <img src="src/assets/images/illustration-article.svg" alt="illustration article">
+        </a>
+        <ul class="card__tags">
+          <li class="card__tag txt-x-bold"><a href="#">Learning</a></li>
+        </ul>
+        <header class="card__header">
+          <p class="card__date txt-bold"> 
+            Published <time datetime="2025-12-21"> 21 Dec 2023 </time>
+          </p>
+          <h2 class="card__title txt-2xl txt-x-bold"><a href="#">HTML AND CSS foundations</a></h2>
+          <p class="card__body txt-base">These languages are the backbone of every website, defining structure, content, and presentation</p>
+        </header>
+        <footer class="card__footer">
+          <a class="card__author" href="#">
+            <img class="card__author-image" src="src/assets/images/image-avatar.webp" alt="image of Greg Hooper">
+            <span class="card__author-name txt-x-bold">Greg Hooper</span>
+          </a>
+        </footer>
+      </article>
+    </main>
+    <!-- ATTRIBUTION SECTION -->
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Dekxisosta</a>.
+      </p>
+    </div>
+  </section>
+</body>
+</html>

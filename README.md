@@ -1,17 +1,26 @@
-# Frontend Mentor - Blog preview card solution
+<table>
+  <tr>
+    <td rowspan="2"><img src="azur-lane-akashi.gif" width="180"></img></td>
+    <td colspan="5"><h1> Frontend Mentor Challenge - Blog Preview Card </h1></td>
+  </tr>
+  <tr>
+    <td colspan="5">
+      <b>[INFO]</b>
+      &nbspFeel free to copy the code — I don’t really care. If you want to make tweaks or notice anything that needs fixing, go ahead and let me know.
+    </td>
+  </tr>
+</table>
+
+## Preview of My Solution
+![](./final-output.png)
 
 ## Overview
 Users should be able to:
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-![](./final-output.png)
 
-### Links
-- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/blog-preview-card-using-html5-css3-and-flexbox-dQL1tCSihA)
-- [Live Site](https://dekxisosta.github.io/blog-preview-card-challenge/)
 
-### Built with
+## Built with
 HTML5, CSS3, Flexbox
 
 ## Author
